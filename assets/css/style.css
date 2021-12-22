@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,700&display=swap');
 
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+}
+
+::selection {
+    background: var(--highlight);
+    color: var(--black);
 }
 
 :root {
@@ -90,7 +94,7 @@
 }
 
 /* HERO SECTION */
-.hero {
+.hero, .hero-product {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,11 +110,17 @@
     z-index: -1;
 }
 
-.hero-container-title {
-    margin-bottom: 15px;
+.hero-product {
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(../images/pexels-quang-nguyen-vinh-products.jpg);
 }
 
-.hero-container h1, .hero-container p{
+.hero-product-title {
+    margin-left: 160px;
+}
+
+.hero-container h1, .hero-product-title h1, .hero-container p{
     display: inline;
     color: var(--white);
     font-size: var(--font-size-xl);
@@ -118,6 +128,10 @@
     font-family: var(--font-family);
     background-color: var(--primary);
 }   
+
+.hero-container-title {
+    margin-bottom: 15px;
+}
 
 .hero-container p {
     font-size: var(--font-size-l);
@@ -156,27 +170,27 @@
 }
 
 /* SERVICE */
-.service-section {
+.service-section, .coments-section {
     padding-bottom: 40px;
 }
 
-.service-wrapper{
+.service-wrapper, .product-wrapper, .gallery-coffee, .coments-wrapper {
     width: 65%;
     margin: 0 auto 40px;
 }
 
-.services {
+.services, .product-our, .gallery-description{
     width: 65%;
     padding: 40px 0px;
 }
 
-.service-title, .values-title, .latest-title {
+.service-title, .values-title, .latest-title, .product-title, .gallery-description h2 {
     font-family: var(--font-family);
     font-size: var(--font-size-li);
     font-weight: var(--bold-font-weight);
 }
 
-.services p, .service-card p, .values-text, .lastet-cards p, .footer-container-form p {
+.services p, .service-card p, .values-text, .lastet-cards p, .footer-container-form p, .product-cards p, .product-our p, .gallery-description p {
     margin-top: 15px;
     font-family: var(--font-family);
     font-size: var(--font-size-m);
@@ -189,13 +203,13 @@
     color: white;
 }
 
-.service-col {
+.service-col, .products-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
 
-.service-card img {
+.service-card img, .product-cards img {
     display: block;
     width: auto;
     height: 180px;
@@ -277,10 +291,66 @@
     text-decoration: 3px underline;
 }
 
+
+/* PRODUTOS GALLERY */ 
+.gallery-tamplete {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.w-50 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0.3rem;
+}
+
+.w-100 {
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.w-50 img, .w-100 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+/* COMENTS */
+.coments-card {
+    width: 60%;
+    margin: 0 auto 20px;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    background-color: var(--grey-1);
+}
+
+.coments-card cite > p {
+    margin-top: 10px;
+    text-align: right;
+    font-style: normal;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-weight: var(--bold-font-weight);
+    color: var(--grey-4);
+}
+
+
 /* FOOTER */
 footer {
     background-color: var(--black);
     padding-bottom: 60px;
+}
+
+.footer-image-svg img {
+   display: block; 
+   object-fit: cover;
+   object-position: center;
+   background-repeat: no-repeat;
+   background-color: white;
 }
 
 .footer-wrapper {
@@ -349,7 +419,7 @@ footer .input-btn:hover {
     justify-content: space-between;
 }
 
-.footer-list h3 {
+.footer-list h3, .coments-card p {
     color: var(--primary);
     font-size: var(--font-size-l);
     font-family: var(--font-family);
@@ -367,6 +437,10 @@ footer .input-btn:hover {
     font-size: var(--font-size);
     font-family: var(--font-family);
     font-weight: var(--body-font-weight);
+}
+
+.footer-list li a:hover {
+    text-decoration: 2px underline;
 }
 
 .list-icon {
@@ -403,6 +477,8 @@ footer .input-btn:hover {
 
 
 
+
+
 /* UTILITÁRIAS */
 .btn-orange {
     display: block;
@@ -434,6 +510,7 @@ footer .input-btn:hover {
         position: relative;
         top: -4px;
     }
+
     to {
         position: relative;
         top: -4px; 
