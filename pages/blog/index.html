@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="shortcut icon" href="/assets/icons/koffee-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/icons/koffee-favicon-copo-2.svg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Blog Koffee</title>
@@ -14,16 +14,41 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="/index.html"><img src="/assets/images/logo-koffee_Prancheta 1.svg" alt="Koffee"></a>
-            <ul>
-                <li><a href="/pages/products/index.html">Produtos</a></li>
-                <li><a href="/pages/values/index.html">Valores</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="/pages/contact/index.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="navbar-wrapper">
+            <a href="/index.html">
+                <img src="/assets/images/logo-koffee-svg.svg" alt="Koffee">
+            </a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/pages/products/index.html">Produtos</a></li>
+                    <li><a href="/pages/values/index.html">Valores</a></li>
+                    <li><a href="/pages/blog/index.html">Blog</a></li>
+                    <li><a href="/pages/contact/index.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="navbar-top-mobile">    
+                <button id="btn-mobile" class="icon nav-icon" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+    
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/pages/products/index.html">Produtos</a></li>
+                        <li><a href="/pages/values/index.html">Valores</a></li>
+                        <li><a href="/pages/blog/index.html">Blog</a></li>
+                        <li><a href="/pages/contact/index.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </div>
     </header>
+    
+    <div class="menu-overlay"></div>
 
     <section class="hero-blog">
         <div class="hero-blog-title">
@@ -69,24 +94,26 @@
         </div>
     </section>
 
+    
     <footer>
         <div class="footer-image-svg">
             <img src="/assets/images/image-footer.svg" alt="">
         </div>
-       
-        <div class="footer-wrapper w-65 margin-auto">
+
+        <div class="footer-wrapper">
             <div class="footer-container-form text-p">
-                <img src="/assets/images/logo-koffee_Prancheta 1.svg" alt="Logo da Koffee">
+                <img src="/assets/images/logo-koffee-svg.svg" alt="Logo da Koffee">
                 <h3 class="title-h3 color-white margin-top-10">Inscreva-se na Newsletter</h3>
 
-                <p class="color-white">Receba nossas notícias incríveis em sua caixa de entrada a cada duas semanas. Seja o primeiro a saber sobre novos produtos.</p>
-                
+                <p class="color-white">Receba nossas notícias incríveis em sua caixa de entrada a cada duas semanas.
+                    Seja o primeiro a saber sobre novos produtos.</p>
+
                 <form action="" method="">
                     <input class="input-email" type="email" name="email" id="email" placeholder="Seu email" required>
-                    <input class="btn-orange" type="button" value="Enviar">
+                    <button id="btn-footer" class="btn-orange" type="submit" value="Enviar">Enviar</button>
                 </form>
             </div>
-            
+
             <div class="footer-container-list">
                 <ul class="footer-list">
                     <h3>Koffee</h3>
@@ -142,6 +169,7 @@
     <!-- Scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 </body>
 

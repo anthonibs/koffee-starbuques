@@ -6,22 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/icons/koffee-favicon-2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/koffee-favicon-copo-2.svg" type="image/x-icon">
     <title>Great Koffee</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="/index.html"><img src="assets/images/logo-koffee_Prancheta 1.svg" alt="Koffee"></a>
-            <ul>
-                <li><a href="/pages/products/index.html">Produtos</a></li>
-                <li><a href="/pages/values/index.html">Valores</a></li>
-                <li><a href="/pages/blog/index.html">Blog</a></li>
-                <li><a href="/pages/contact/index.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="navbar-wrapper">
+            <a href="/index.html">
+                <img src="assets/images/logo-koffee-svg.svg" alt="Koffee">
+            </a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/pages/products/index.html">Produtos</a></li>
+                    <li><a href="/pages/values/index.html">Valores</a></li>
+                    <li><a href="/pages/blog/index.html">Blog</a></li>
+                    <li><a href="/pages/contact/index.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="navbar-top-mobile">
+                <button id="btn-mobile" class="icon nav-icon" type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a href="/pages/products/index.html">Produtos</a></li>
+                        <li><a href="/pages/values/index.html">Valores</a></li>
+                        <li><a href="/pages/blog/index.html">Blog</a></li>
+                        <li><a href="/pages/contact/index.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
+
+    <div class="menu-overlay"></div>
 
     <section class="hero">
         <div class="hero-container">
@@ -40,7 +65,7 @@
             <div class="about-title">
                 <h2 class="title-h2">Por que Koffee?</h2>
             </div>
-            <div class="about-text">
+            <div class="about-text color-black">
                 <p>
                     Koffee é a cafeteria para todos que acreditam que um bom café não deve apenas ser saboroso, mas
                     também
@@ -52,9 +77,9 @@
         </div>
     </section>
 
-    <section class="service-section padding-top-40 padding-bottom-40">
+    <section class="service-section padding-bottom-40">
         <div class="service-wrapper">
-            <div class="services w-65 text-p">
+            <div class="services w-65 text-p color-black">
                 <h2 class="title-h2">O que nós oferecemos</h2>
                 <p>Koffee é o local ideal para os amantes do café que desejam aprender sobre a origem de seu café e
                     apoiar os agricultores que o cultivam. Levamos a sério a produção, torrefação e fermentação do café
@@ -140,7 +165,7 @@
 
         <div class="footer-wrapper">
             <div class="footer-container-form text-p">
-                <img src="assets/images/logo-koffee_Prancheta 1.svg" alt="Logo da Koffee">
+                <img src="assets/images/logo-koffee-svg.svg" alt="Logo da Koffee">
                 <h3 class="title-h3 color-white margin-top-10">Inscreva-se na Newsletter</h3>
 
                 <p class="color-white">Receba nossas notícias incríveis em sua caixa de entrada a cada duas semanas.
@@ -204,6 +229,7 @@
     <!-- Scripts -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
