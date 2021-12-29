@@ -32,7 +32,7 @@ Todo o site é responsivo para Smartphones, Tablets e Desktops.
 [![Screen-Recorder-Project8.gif](https://i.postimg.cc/ZnQqWjP5/Screen-Recorder-Project8.gif)](https://postimg.cc/dZ8FX2Sb)
 
 -------------------------
-[![Screen-Recorder-Project9-1.gif](https://i.postimg.cc/CMr5rLyp/Screen-Recorder-Project9-1.gif)](https://postimg.cc/jCNRLTdM)
+[![Screen-Recorder-Project9.gif](https://i.postimg.cc/HW8zH1FG/Screen-Recorder-Project9.gif)](https://postimg.cc/fkZmjpw5)
 
 ### Smartphones
 
