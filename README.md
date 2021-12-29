@@ -17,7 +17,7 @@ Clique **[aqui](https://koffee-starbuques.netlify.app/)** para acessar!
 
  - **[Ionicons](https://ionic.io/ionicons)**: biblioteca de ícones.
    
-  - **[Google fonts](https://fonts.google.com/)**: é uma biblioteca com mais de 800 fontes livres licenciadas.
+  - **[Google fonts](https://fonts.google.com/)**: biblioteca fontes livres licenciadas.
    
   - **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**: é uma linguagem leve, interpretada e baseada em objetos com funções de primeira classe, mais conhecida como a linguagem de script para páginas Web.
    
