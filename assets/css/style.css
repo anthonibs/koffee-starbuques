@@ -94,7 +94,7 @@
         display: inline-block;
         background-color: transparent;
         border:  none;
-        z-index: 1500;
+        z-index: 2500;
     }
 
     .nav-icon span{
@@ -153,7 +153,7 @@
         width: 250px;
         height: 100vh;
         background-color: var(--grey-2);
-        z-index: 1300;
+        z-index: 2000;
         transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     }   
 
@@ -164,7 +164,7 @@
     }
 
     .menu-mobile li {
-        padding: 15px;
+        padding: 10px;
     }
 
     .menu-mobile li > a {
@@ -183,7 +183,7 @@
     .menu-mobile li > a:hover::before  {
         content: "+";
         position: absolute;
-        left: 35px;
+        left: 30px;
     }
 
     .menu-mobile li > a:hover { 
@@ -197,7 +197,7 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        top: 0px;
+        top: 75px;
         height: 280px;
         width: 100%;
         background-image: url(../images/coffee-hero.jpg);
@@ -205,12 +205,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         z-index: -1;
-        margin-top: 75px;
+        padding-bottom: 75px;
     }
 
     .hero-product, .hero-values, .hero-blog {
         justify-content: center;
         align-items: flex-start;
+        padding-bottom: 0px;
         background-image: url(../images/pexels-quang-nguyen-vinh-products.jpg);
     }
 
@@ -278,9 +279,12 @@
     .service-wrapper, .product-wrapper, .gallery-coffee, .coments-wrapper, .monthly-plans-wrapper, .latest-wrapper {
         width: 90%;
         margin: 0 auto;
-        
     }
     
+    .product-section, .page-our-values, .blog-lastet {
+        padding-top: 75px;
+    }
+
     .title-h2, .title-h2-ll {
         font-family: var(--font-family);
         font-size: var(--font-size-lg);
@@ -633,7 +637,6 @@
     /* FOOTER */
     footer {
         background-color: var(--black);
-        padding-bottom: 30px;
     }
 
     .footer-wrapper {
@@ -712,7 +715,7 @@
         list-style: none;
     }
 
-    .footer-list li a {
+    .footer-list li a, .footer-dev, .footer-dev a {
         text-decoration: none;
         color: white;
         font-size: var(--font-size);
@@ -720,8 +723,15 @@
         font-weight: var(--body-font-weight);
     }
 
-    .footer-list li a:hover {
+    .footer-list li a:hover, .footer-dev a:hover {
         text-decoration: 2px underline;
+    }
+
+    .footer-dev {
+        margin-top: 40px;
+        padding: 0.325rem;
+        text-align: center;
+        background-color:var(--grey-3);
     }
 
     .list-icon {
@@ -991,7 +1001,7 @@
     }
 
     .w-65 {
-        width: 65%; 
+        width: 80%; 
     }
 
     .title-h1 {
@@ -1002,18 +1012,14 @@
         font-size: var(--font-size-l);
     }  
 
-    /* .hero, .hero-product, .hero-values, .hero-blog {
-        top: 75px; 
-    } */
-
     .about-me-wrapper, .values-wrapper  {
         display: flex;
         width: 65%;
         margin: 0 auto;
     }
 
-    .product-section {
-      padding-top: 75px;
+    .product-section, .page-our-values, .blog-lastet {
+      padding-top: 0px;
     }
 
     .service-wrapper, .product-wrapper, .gallery-coffee, .coments-wrapper, .monthly-plans-wrapper, .latest-wrapper {
@@ -1140,7 +1146,7 @@ footer .btn-orange {
     width: 100%;
     height: 100vh;
     position: fixed;
-    z-index: 1000;
+    z-index: 1200;
     opacity: 0.7;
     animation: animOvarlay 1s ease-out forwards;
 }
